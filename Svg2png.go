@@ -10,8 +10,8 @@ import (
 	"github.com/srwiley/rasterx"
 )
 
-func Svg2png(options Options) {
-	if !normalizeOptions(&options) {
+func Svg2png(options *Options) {
+	if !normalizeOptions(options) {
 		fmt.Println("Invalid options")
 		return
 	}
